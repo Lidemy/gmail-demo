@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+li {
+  list-style-type: none;
+}
+
+h3, h4, p {
+  font-weight: normal;
+}
+
+/* wrapper */
+
+.mobpage_wrapper {
+  height: 100%;
+  max-width: 768px;
+  margin: 60px auto;
+}
+
+/* navbar */
+
+.mobpage_nav {
+  width: 768px;
+  position: fixed;
+  background: #fff;
+  top: 0;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.mobpage_nav_list {
+  display: flex;
+  align-items: center;
+}
+
+.mobpage_nav_left {
+  display: flex;
+}
+
+.mobpage_nav_list li {
+  display: flex;
+}
+
+.mobpage_back_arrow_logo {
+  width: 18px;
+  height: 18px;
+  background: url('./svg/back-arrow.svg') center/cover no-repeat;
+  cursor: pointer;
+  filter: opacity(0.8);
+  margin: 8px 20px;
+}
+
+.mobpage_download_logo {
+  width: 18px;
+  height: 18px;
+  background: url('./svg/download.svg') center/cover no-repeat;
+  cursor: pointer;
+  filter: opacity(0.8);
+  margin: 8px 20px;
+}
+
+.mobpage_delete_logo {
+  width: 18px;
+  height: 18px;
+  background: url('./svg/delete.svg') center/cover no-repeat;
+  cursor: pointer;
+  filter: opacity(0.8);
+  margin: 8px 20px;
+}
+
+.mobpage_mail_logo {
+  width: 18px;
+  height: 18px;
+  background: url('./svg/email.svg') center/cover no-repeat;
+  cursor: pointer;
+  filter: opacity(0.8);
+  margin: 8px 20px;
+}
+
+.mobpage_option_logo {
+  width: 18px;
+  height: 18px;
+  background: url('./svg/more.svg') center/cover no-repeat;
+  cursor: pointer;
+  filter: opacity(0.8);
+  margin: 8px 20px;
+}
+
+.mobpage_back_logo {
+  width: 18px;
+  height: 18px;
+  background: url('./svg/back.svg') center/cover no-repeat;
+  cursor: pointer;
+  filter: opacity(0.8);
+  margin: 8px 0;
+}
+
+/* title */
+
+.mobpage_mail_title {
+  display: flex;
+  align-items: center;
+  margin: 30px 20px;
+  line-height: 2em;
+}
+
+.mobpage_mail_title h3 {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.mobpage_mail_title_left, .mail_title_right {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mobpage_mail_title_left span {
+  height: 20px;
+  font-size: 10px;
+  font-weight: normal;
+  background: #9e9e9e57;
+  padding: 0 0.8em;
+  line-height: 2em;
+  border-radius: 5px;
+}
+
+.mobpage_arrow {
+  min-width: 15px;
+  height: 18px;
+  background: url('./svg/forward.svg') center/cover no-repeat;
+  cursor: pointer;
+  filter: opacity(0.8);
+  margin: 2px 8px;
+}
+
+.mobpage_star {
+  min-width: 16px;
+  height: 16px;
+  background: url('./svg/star.svg') center/cover no-repeat;
+  cursor: pointer;
+  filter: opacity(0.8);
+  margin: 8px 20px;
+}
+
+/* header */
+
+.mobpage_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 20px;
+}
+
+.mobpage_header_left {
+  display: flex;
+}
+
+.mobpage_avatar {
+  min-width: 40px;
+  height: 40px;
+  background: url('https://ssl.gstatic.com/ui/v1/icons/mail/profile_mask2.png') center/cover no-repeat;
+  background-color: #8c8a8a;
+  border-radius: 50%;  
+}
+
+.mobpage_user_info {
+  display: flex;
+  align-items: center;
+}
+
+.mobpage_user_info h4 {
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 12px;
+}
+
+.mobpage_user_info span {
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+.mobpage_send_to {
+  margin-left: 12px;  
+}
+
+.mobpage_send_to p {
+  font-size: 12px;
+  font-weight: lighter;  
+}
+
+.mobpage_header_right ul {
+  display: flex;
+  align-items: center;
+}
+
+.mobpage_header_right li {
+  display: flex;
+}
+
+/* section */
+
+.mobpage_section p, .mobpage_section a {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 2em;
+  margin: 20px 25px;
+}
+
+@media (max-width: 768px) {
+  .mobpage_nav {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .mobpage_mail_title {
+    margin: 30px 10px;
+  }
+
+  .mobpage_header {
+    margin: 20px 10px;
+  }
+
+  .mobpage_section p, .mobpage_section a {
+    margin: 20px 15px;
+  }
+}
+

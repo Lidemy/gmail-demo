@@ -1,0 +1,283 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+li {
+  list-style-type: none;
+}
+
+h3, h4, p {
+  font-weight: lighter;
+}
+
+
+/* wrapper */
+
+.wrapper {
+  height: 100%;
+  max-width: 768px;
+  margin: 10px auto;
+}
+
+/* header */
+
+.header {
+  height: 3.5em;
+  margin: 20px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 3.5px 0 rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_option {
+  width: 16px;
+  height: 16px;
+  background: url('./svg/option.svg') center/cover no-repeat;
+  cursor: pointer;
+  filter: opacity(0.8);
+  margin: 8px 20px;
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+}
+
+.header input {
+  width: 200px;
+  border: none;
+  height: 24px;
+}
+
+.header input:focus {
+  outline: none;
+}
+
+.header_avatar {
+  min-width: 30px;
+  height: 30px;
+  background: url('https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:60/https://www.filepicker.io/api/file/a8fY8pGRSbWi2WNX6QIu') center/cover no-repeat;
+  border-radius: 50%;
+  margin: 3px 15px;
+}
+
+/* section */
+
+section {
+  margin: 0 20px;
+}
+
+section > p {
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.mail_list {
+  margin: 20px 0;
+}
+
+.mail_list li {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.mail_avatar {
+  min-width: 40px;
+  height: 40px;
+  background: url('https://ssl.gstatic.com/ui/v1/icons/mail/profile_mask2.png') center/cover no-repeat;
+  background-color: #8c8a8a;
+  border-radius: 50%;
+}
+
+.mail_right {
+  width: 90%;
+}
+
+.mail_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.mail_header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 15px;
+  height: 18px;
+  background: url('./svg/forward.svg') center/cover no-repeat;
+  cursor: pointer;
+  filter: opacity(0.8);
+  margin-right: 10px
+}
+
+.mail_header h3 {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+.mail_info_right {
+  display: flex;
+  align-items: center;
+}
+
+.attach {
+  width: 15px;
+  height: 15px;
+  background: url('./svg/attach.svg') center/cover no-repeat;
+  cursor: pointer;
+  filter: opacity(0.4);
+  margin-right: 6px  
+}
+
+.mail_info_right p {
+  font-size: 12px;
+}
+
+.mail_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.mail_title {
+  width: 600px;
+  font-size: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.mail_content p {
+  width: 600px;
+  font-size: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.star {
+  min-width: 15px;
+  height: 15px;
+  background: url('./svg/star.svg') center/cover no-repeat;
+  cursor: pointer;
+  filter: opacity(0.4);
+  margin-right: 6px   
+}
+
+
+/* footer */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+}
+
+.footer_wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 10px auto;
+  background: #fff;
+  border-top: 0.1px solid rgba(0,0,0,0.1);
+}
+
+.footer_left, .footer_right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer_left p, .footer_right p {
+  font-size: 12px;
+} 
+
+.footer_email {
+  width: 20px;
+  height: 20px;
+  background: url('./svg/gmail.svg') center/cover no-repeat;
+  cursor: pointer;
+  filter: opacity(0.8);
+  margin: 10px
+}
+
+.footer_video {
+  width: 20px;
+  height: 20px;
+  background: url('./svg/video-camera.svg') center/cover no-repeat;
+  cursor: pointer;
+  filter: opacity(0.8);
+  margin: 10px  
+}
+
+.write {
+  position: absolute;
+  right: 0;
+  bottom: 80px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  background: #fff;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.write p {
+  color: red;
+  margin: 10px;
+}
+
+.pen {
+  width: 20px;
+  height: 20px;
+  background: url('./svg/pen.svg') center/cover no-repeat;
+  cursor: pointer;
+  filter: opacity(0.8);
+  margin: 10px 0;   
+}
+
+@media (max-width: 768px) {
+  .mail_title {
+    width: 75vw;
+  }
+
+  .mail_content p {
+    width: 75vw;
+  }
+
+  .footer_wrapper {
+    max-width: 80vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .mail_title {
+    width: 70vw;
+  }
+
+  .mail_content p {
+    width: 70vw;
+  }
+}
+
